@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class GCD{
+    public static void main(String[] args){
+        int i=1;
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter two numbers:");
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int ans = 1;
+
+        int c = Math.min(a,b);
+
+        while(i<=c){
+            if(a%i==0 && b%i==0)
+            {
+                ans= i;
+            }
+            i++;
+        }
+        System.out.println(ans);
+    }
+}
