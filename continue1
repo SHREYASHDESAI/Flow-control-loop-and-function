@@ -1,0 +1,19 @@
+// give x/y for pairs of x,y, skip if y=0
+
+import java.util.Scanner;
+
+public class continue1 {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int i;
+        for(i=1;i<=5;i++) {
+            System.out.println(i + ".Enter Value of x and y:");
+            int x = s.nextInt();
+            int y = s.nextInt();
+
+            if (y == 0)
+                continue;
+            System.out.println("x/y= " + (x/y));
+        }
+    }
+}
