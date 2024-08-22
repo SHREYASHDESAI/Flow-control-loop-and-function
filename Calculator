@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+    public static int add(int a,int b){
+        return a+b;
+    }
+
+    public static int sub(int a,int b){
+        return a-b;
+    }
+
+    public static int product(int a,int b){
+        return a*b;
+    }
+
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter two Numbers for Operations:");
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        System.out.println("Choices Available:\n1.Addition \n2.Subtraction \n3.Multiplication");
+        System.out.println("Enter a Choice:");
+        int x = s.nextInt();
+
+        switch(x)
+        {
+            case 1:
+            {
+                int l = add(a,b);
+                System.out.println("Addition is = " + l);
+                break;
+            }
+            case 2:
+            {
+                int m = sub(a,b);
+                System.out.println("Subtraction is = " + m);
+                break;
+            }
+            case 3:
+            {
+                int n = product(a,b);
+                System.out.println("Multiplication is = " + n);
+                break;
+            }
+            default :
+            {
+                System.out.println("Enter Valid Choice.");
+            }
+        }
+    }
+}
