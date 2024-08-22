@@ -1,0 +1,29 @@
+//(method2) if enter no. is negative show invalid and exit the program, if zero or positive number
+// then print sum of n natural nos.
+
+import java.util.Scanner;
+
+public class Negativenum {
+    public static void main(String[] args) {
+        int i;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a Number:");
+        int x = sc.nextInt();
+
+        if (x < 0) {
+            System.out.println("Invalid Number");
+            return; // imp to exit from program
+        }
+        System.out.println((x * (x + 1)) / 2);
+
+    }
+}
+
+
+
+
+
+
+
+
