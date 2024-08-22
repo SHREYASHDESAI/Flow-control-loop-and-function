@@ -1,0 +1,21 @@
+//find largest among three numbers using Math.max
+
+import java.util.Scanner;
+
+public class Large3usingMath {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter Three Numbers:");
+        int x = s.nextInt();
+        int y = s.nextInt();
+        int z = s.nextInt();
+
+        int ans_1 = Math.max(x,y);
+        int ans = Math.max(ans_1,z);
+
+        System.out.println("Greatest Number is: " + ans);
+
+
+    }
+}
