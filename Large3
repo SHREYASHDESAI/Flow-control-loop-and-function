@@ -1,0 +1,42 @@
+//find largest among three numbers
+
+import java.util.Scanner;
+
+public class Large3 {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter Three Numbers:");
+        int x = s.nextInt();
+        int y = s.nextInt();
+        int z = s.nextInt();
+
+        if(x>y)
+        {
+            if(x>z)
+            {
+                System.out.println(x + " is greatest");
+            }
+            else
+            {
+                System.out.println(z + " is greatest");
+            }
+        }
+        else if(y>x)
+        {
+            if(y>z)
+            {
+                System.out.println(y + " is greatest");
+            }
+            else
+            {
+                System.out.println(z + " is greatest");
+            }
+        }
+        else
+        {
+            System.out.println("All are Equal");
+        }
+
+    }
+}
