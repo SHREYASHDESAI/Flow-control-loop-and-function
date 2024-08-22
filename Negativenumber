@@ -1,0 +1,29 @@
+//if enter no. is negative show invalid and exit the program, if zero or positive
+// number then print sum of n natural nos.
+
+import java.util.Scanner;
+
+public class Negativenumber {
+    public static void main(String[] args){
+        int i;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a Number:");
+        int x = sc.nextInt();
+
+        if(x>=0)
+        {
+            int sum = 0;
+            for(i=0;i<=x;i++)
+            {
+                sum = sum + i;
+            }
+            System.out.println("Sum of n numbers is = " + sum);
+        }
+        else
+        {
+            System.out.println("Invalid Number");
+
+        }
+    }
+}
